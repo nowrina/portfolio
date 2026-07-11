@@ -114,3 +114,84 @@ nav ul li a.active{
     color:#050816;
     font-weight:bold;
 }
+/* Mobile Responsive Design */
+
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+    /* Navigation */
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+
+    /* Hero Section */
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:30px 20px;
+    }
+
+
+    .hero-text{
+        width:100%;
+    }
+
+
+    .hero-text h1{
+        font-size:32px;
+    }
+
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+
+    .hero-image img{
+        width:250px;
+        height:250px;
+        margin-top:30px;
+    }
+
+
+    /* Sections */
+    section{
+        padding:40px 20px;
+    }
+
+
+    /* Cards */
+    .card-container{
+        flex-direction:column;
+    }
+
+
+    .card{
+        width:100%;
+    }
+
+
+    /* Buttons */
+    button{
+        width:90%;
+    }
+
+
+    /* Footer */
+    footer{
+        text-align:center;
+    }
+
+}

@@ -45,8 +45,11 @@
 
 .hero-image img{
 
-    width:350px;
-    height:350px;
+   .hero-image img{
+    width:100%;
+    max-width:400px;
+    height:auto;
+   }
 
     object-fit:cover;
 
@@ -407,4 +410,12 @@
 .stat-card:hover{
     transform:translateY(-10px);
     box-shadow:0 0 20px rgba(0,229,255,0.4);
+}
+@media screen and (max-width:768px){
+
+    .hero-image img{
+        max-width:250px;
+        height:auto;
+    }
+
 }
