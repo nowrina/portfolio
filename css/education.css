@@ -1,0 +1,221 @@
+/* ===========================
+   EDUCATION PAGE
+=========================== */
+
+body{
+    background:linear-gradient(135deg,#050816,#071A35,#0A192F);
+    font-family:Arial,sans-serif;
+    color:white;
+}
+
+.education{
+
+    width:80%;
+    margin:60px auto;
+
+}
+
+.education h1{
+
+    text-align:center;
+
+    font-size:50px;
+
+    color:#00E5FF;
+
+    margin-bottom:60px;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    margin-left:30px;
+
+    border-left:3px solid #00E5FF;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:60px;
+
+    padding-left:40px;
+
+}
+
+.timeline-dot{
+
+    width:20px;
+
+    height:20px;
+
+    background:#00E5FF;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    left:-12px;
+
+    top:20px;
+
+    box-shadow:0 0 20px cyan;
+
+}
+
+.timeline-content{
+
+    background:rgba(255,255,255,.08);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+.timeline-content:hover{
+
+    transform:translateX(10px);
+
+    box-shadow:0 0 20px rgba(0,229,255,.5);
+
+}
+
+.timeline-content h2{
+
+    color:#FFC857;
+
+}
+
+.timeline-content h3{
+
+    color:#00E5FF;
+
+    margin:10px 0;
+
+}
+
+.timeline-content p{
+
+    color:#EAF6FF;
+
+    line-height:1.7;
+
+}
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+}
+
+.contact-info,
+.contact-form{
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+.contact-info h2,
+.contact-form h2{
+
+    color:#FFC857;
+
+    margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+    color:#EAF6FF;
+
+    margin-bottom:25px;
+
+    line-height:1.8;
+
+}
+
+.info-box{
+
+    margin-bottom:20px;
+
+    color:white;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.10);
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:#cccccc;
+
+}
+
+.contact-form button{
+
+    background:#00E5FF;
+
+    color:black;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#FFC857;
+
+}

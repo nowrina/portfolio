@@ -1,0 +1,116 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+body{
+    font-family:'Inter',sans-serif;
+    background:linear-gradient(135deg,#050816,#071A35,#0A192F);
+    color:#ffffff;
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* Background Grid */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(0,229,255,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,.08) 1px, transparent 1px);
+    background-size:80px 80px;
+    pointer-events:none;
+    z-index:-2;
+}
+
+/* Background Glow */
+body::after{
+    content:"";
+    position:fixed;
+    top:-150px;
+    right:-150px;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle, rgba(0,229,255,.18), transparent 70%);
+    filter:blur(60px);
+    z-index:-1;
+}
+
+/* ==========================
+   LINKS
+========================== */
+a{
+    text-decoration:none;
+}
+
+/* ==========================
+   NAVIGATION BAR
+========================== */
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 70px;
+
+    background:rgba(5,8,22,.90);
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(0,229,255,.20);
+}
+
+/* Logo */
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#00E5FF;
+    letter-spacing:2px;
+}
+
+.logo:hover{
+    color:#FFC857;
+}
+
+/* Menu */
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    font-size:17px;
+    font-weight:500;
+    padding:8px 14px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00E5FF;
+    background:rgba(0,229,255,.12);
+}
+
+nav ul li a.active{
+    background:#00E5FF;
+    color:#050816;
+    font-weight:bold;
+}

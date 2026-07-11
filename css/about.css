@@ -1,0 +1,77 @@
+/* =========================
+        ABOUT PAGE
+========================= */
+
+.about{
+
+    max-width:1100px;
+
+    margin:60px auto;
+
+    padding:50px;
+
+    background:rgba(255,255,255,0.08);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    box-shadow:0 0 40px rgba(0,229,255,.25);
+
+}
+
+.about h1{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:55px;
+
+    color:#00E5FF;
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+}
+
+.about h2{
+
+    color:#FFC857;
+
+    margin-top:35px;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+}
+
+.about p{
+
+    color:#EAF6FF;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+}
+
+.about ul{
+
+    margin-left:30px;
+
+    color:#EAF6FF;
+
+    font-size:20px;
+
+    line-height:2;
+
+}
+
+.about strong{
+
+    color:#00E5FF;
+
+}
