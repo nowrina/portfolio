@@ -44,5 +44,10 @@ function typeEffect() {
     setTimeout(typeEffect, isDeleting ? 50 : 100);
 
 }
+function toggleMenu(){
 
-typeEffect();
+    document.getElementById("nav-links")
+    .classList.toggle("active");
+
+}
+
