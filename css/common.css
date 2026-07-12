@@ -114,7 +114,20 @@ nav ul li a.active{
     color:#050816;
     font-weight:bold;
 }
-/* Mobile Responsive Design */
+/* ==========================
+   HAMBURGER MENU
+========================== */
+
+.menu-icon{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
 
 @media screen and (max-width:768px){
 
@@ -124,19 +137,47 @@ nav ul li a.active{
 
 
     /* Navigation */
+
     nav{
-        flex-direction:column;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
         padding:20px;
     }
 
-    nav ul{
-        flex-direction:column;
-        gap:15px;
-        text-align:center;
+
+    .menu-icon{
+        display:block;
     }
 
 
+    nav ul{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:rgba(5,8,22,.95);
+        text-align:center;
+        padding:20px;
+        gap:15px;
+    }
+
+
+    nav ul.active{
+        display:flex;
+    }
+
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+
+
     /* Hero Section */
+
     .hero{
         flex-direction:column;
         text-align:center;
@@ -166,13 +207,8 @@ nav ul li a.active{
     }
 
 
-    /* Sections */
-    section{
-        padding:40px 20px;
-    }
-
-
     /* Cards */
+
     .card-container{
         flex-direction:column;
     }
@@ -184,62 +220,14 @@ nav ul li a.active{
 
 
     /* Buttons */
+
     button{
         width:90%;
     }
 
 
-    /* Footer */
     footer{
         text-align:center;
-    }
-
-}
-/* Hamburger menu */
-
-.menu-icon{
-    display:none;
-    font-size:30px;
-    cursor:pointer;
-}
-
-
-/* Mobile Navbar */
-
-@media screen and (max-width:768px){
-
-    nav{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        padding:20px;
-    }
-
-
-    .menu-icon{
-        display:block;
-    }
-
-
-    nav ul{
-        display:none;
-        flex-direction:column;
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        text-align:center;
-        padding:20px;
-    }
-
-
-    nav ul.active{
-        display:flex;
-    }
-
-
-    nav ul li{
-        margin:15px 0;
     }
 
 }
